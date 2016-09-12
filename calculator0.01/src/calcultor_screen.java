@@ -44,6 +44,9 @@ public class calcultor_screen extends javax.swing.JFrame {
         button_3 = new javax.swing.JButton();
         button_add = new javax.swing.JButton();
         buktton_equal = new javax.swing.JButton();
+        button_divide = new javax.swing.JButton();
+        button_sub = new javax.swing.JButton();
+        button_mul = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -137,44 +140,70 @@ public class calcultor_screen extends javax.swing.JFrame {
             }
         });
 
+        button_divide.setText("/");
+        button_divide.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_divideActionPerformed(evt);
+            }
+        });
+
+        button_sub.setText("-");
+        button_sub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_subActionPerformed(evt);
+            }
+        });
+
+        button_mul.setText("X");
+        button_mul.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_mulActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(input_textarea)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(button_1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button_2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button_3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button_add))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(button_4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button_5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button_6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button_sub))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(button_0)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(button_7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(button_8)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(button_1)
+                                .addComponent(button_9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(button_2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(button_3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(button_add))
+                                .addComponent(button_divide))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(button_4)
+                                .addComponent(buktton_equal)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(button_5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(button_6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buktton_equal))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(button_0)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(button_7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(button_8)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(button_9)))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                                .addComponent(button_mul))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -192,14 +221,18 @@ public class calcultor_screen extends javax.swing.JFrame {
                     .addComponent(button_4)
                     .addComponent(button_5)
                     .addComponent(button_6)
-                    .addComponent(buktton_equal))
+                    .addComponent(button_sub))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(button_7)
                     .addComponent(button_8)
-                    .addComponent(button_9))
+                    .addComponent(button_9)
+                    .addComponent(button_divide))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(button_0)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(button_0)
+                    .addComponent(buktton_equal)
+                    .addComponent(button_mul))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -247,8 +280,26 @@ public class calcultor_screen extends javax.swing.JFrame {
         {
             result = firstnum +  secondnum ;
             answer = String.format("%.0f", result);
-            input_textarea.setText(answer);
+            input_textarea.setText(firstnum+" + " + secondnum+" = " + answer);
         }
+        if(operator == "-")
+        {
+            result = firstnum +  secondnum ;
+            answer = String.format("%.0f", result);
+            input_textarea.setText(firstnum+" - " + secondnum+" = " + answer);
+        }
+        if(operator == "*")
+        {
+            result = firstnum +  secondnum ;
+            answer = String.format("%.0f", result);
+            input_textarea.setText(firstnum+" * " + secondnum+" = " + answer);
+        }if(operator == "/")
+        {
+            result = firstnum +  secondnum ;
+            answer = String.format("%.0f", result);
+            input_textarea.setText(firstnum+" / " + secondnum+" = " + answer);
+        }
+        
     }//GEN-LAST:event_buktton_equalActionPerformed
 
     private void button_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_3ActionPerformed
@@ -291,6 +342,27 @@ public class calcultor_screen extends javax.swing.JFrame {
            String Enternumber =  input_textarea.getText() + button_1.getText();
         input_textarea.setText(Enternumber);
     }//GEN-LAST:event_button_0ActionPerformed
+
+    private void button_subActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_subActionPerformed
+        // TODO add your handling code here:
+        firstnum = Double.parseDouble(input_textarea.getText());
+        input_textarea.setText("");
+        operator = "-";
+    }//GEN-LAST:event_button_subActionPerformed
+
+    private void button_divideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_divideActionPerformed
+        // TODO add your handling code here:
+        firstnum = Double.parseDouble(input_textarea.getText());
+        input_textarea.setText("");
+        operator = "/";
+    }//GEN-LAST:event_button_divideActionPerformed
+
+    private void button_mulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_mulActionPerformed
+        // TODO add your handling code here:
+        firstnum = Double.parseDouble(input_textarea.getText());
+        input_textarea.setText("");
+        operator = "*";
+    }//GEN-LAST:event_button_mulActionPerformed
 
     /**
      * @param args the command line arguments
@@ -340,6 +412,9 @@ public class calcultor_screen extends javax.swing.JFrame {
     private javax.swing.JButton button_8;
     private javax.swing.JButton button_9;
     private javax.swing.JButton button_add;
+    private javax.swing.JButton button_divide;
+    private javax.swing.JButton button_mul;
+    private javax.swing.JButton button_sub;
     private javax.swing.JTextField input_textarea;
     // End of variables declaration//GEN-END:variables
 }

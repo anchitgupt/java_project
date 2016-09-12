@@ -23,47 +23,53 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="input_textarea" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="button_1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="button_1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="button_2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="button_3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="button_add" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="button_4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="button_5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="button_6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="button_sub" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="button_0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="button_7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="button_2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="button_3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="button_add" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="button_4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="button_5" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="button_6" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="buktton_equal" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="button_0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Component id="button_7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="button_8" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="button_9" min="-2" max="-2" attributes="0"/>
+                              <Component id="button_8" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="button_9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="button_divide" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="buktton_equal" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="button_mul" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
           </Group>
@@ -86,16 +92,21 @@
                   <Component id="button_4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="button_5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="button_6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buktton_equal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="button_sub" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="button_7" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="button_8" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="button_9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="button_divide" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="button_0" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="button_0" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buktton_equal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="button_mul" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -201,6 +212,30 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buktton_equalActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="button_divide">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="/"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_divideActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="button_sub">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="-"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_subActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="button_mul">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="X"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_mulActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
